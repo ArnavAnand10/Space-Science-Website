@@ -248,7 +248,7 @@ hr {
     font-family: "Poppins";
     font-weight: bolder;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
   }
   .text-box h2 {
@@ -263,6 +263,9 @@ hr {
 
   .text-box {
     padding: 1% 5% 1% 5% !important;
+  }
+  .caption h1 {
+    font-size: 2.5rem !important;
   }
 }
 
