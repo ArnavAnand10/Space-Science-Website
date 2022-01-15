@@ -509,7 +509,7 @@ hr {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
-  z-index: 1;
+  z-index: 999;
 }
 #back-to-top-btn:hover,
 #back-to-top-btn:focus {
