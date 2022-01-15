@@ -1,0 +1,599 @@
+body {
+  font-family: "Poppins";
+  color: rgb(37, 37, 37);
+  background-color: #19252e;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+hr {
+  width: 50%;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  height: 4px !important;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+/* navbar Styling */
+
+.navbar {
+  padding: 10px;
+}
+.navbar .active {
+  border-bottom: 2px white solid;
+}
+
+.navbar li {
+  font-size: larger;
+}
+
+.bg-dark {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.navbar ul {
+  height: auto;
+}
+
+/* FadeinUp Animation */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* Fadein Animation */
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Top Page*/
+
+.headingBox {
+  text-align: center;
+  padding: 0%;
+}
+
+#heading {
+  letter-spacing: 3px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.showcase {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color)
+    url("./https://traversymedia.com/downloads/cover.jpg") no-repeat center
+    center/cover;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container:after {
+  content: "";
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.content {
+  z-index: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  border: solid #fff 1px;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background-color: rgb(0, 132, 255);
+}
+
+/* ******TOP PAGE END********** */
+
+/* Top Page Carousel */
+
+.carousel {
+  height: auto;
+  cursor: pointer;
+}
+
+.quote {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0%;
+  padding: 0 5% 0% 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #heading {
+    letter-spacing: 3px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+  }
+  .text-box h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.text-box {
+  background-color: #19252e;
+  padding: 1% 15% 1% 15%;
+  text-align: left;
+  color: white;
+}
+
+.text-box h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+  color: white;
+}
+
+.text-box h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: white;
+  padding: 20px;
+}
+
+.text-box h4 {
+  line-height: 1.3;
+  margin-bottom: 50px;
+  color: white;
+}
+
+/* Read More Cards */
+
+.container {
+  padding: 2%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #19252e;
+}
+
+.container img {
+  width: 180px;
+  height: 180px;
+  background-color: black;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px rgb(255, 255, 255) solid;
+  transition: 0.6s;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 10px 68px 5px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 12px 10px 68px 5px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 12px 10px 68px 5px rgba(0, 0, 0, 0.65);
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.branches {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.branches .branch-items {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.branches .branch-items .item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+}
+
+.branches .branch-items .item-inner {
+  padding: 30px;
+}
+.branches .branch-items .read-more-cont {
+  display: none;
+}
+.branches .branch-items .item-inner h3 {
+  padding: 20px 0 5px 0;
+  font-size: 30px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
+  position: relative;
+}
+.branches .branch-items .item-inner h3::before {
+  content: "";
+  height: 1px;
+  width: 80px;
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.branches .branch-items .item-inner p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 0 5px;
+  text-align: left;
+}
+.branches .branch-items .item-inner .btn {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.branches .branch-items .item-inner .btn:hover {
+  transform: scale(0.98);
+  background-color: rgb(0, 132, 255);
+  border: 1px black solid;
+}
+
+.popup-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.popup-box.open {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-box .popup-content {
+  background-color: #ffffff;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.popup-box .popup-header {
+  padding: 15px 40px 15px 15px;
+  border-bottom: 1px solid #dddddd;
+}
+.popup-box .popup-header h3 {
+  margin: 0;
+  color: #e91e63;
+  font-size: 20px;
+}
+.popup-box .popup-header .popup-close-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #555555;
+  font-size: 28px;
+  line-height: 30px;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.popup-box .popup-body {
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.popup-box .popup-body img {
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+}
+.popup-box .popup-body p {
+  font-size: 16px;
+  color: #555555;
+  margin: 0 0 15px;
+}
+.popup-box .popup-footer {
+  padding: 15px;
+  border-top: 1px solid #dddddd;
+  text-align: right;
+}
+.popup-box .popup-footer .btn {
+  padding: 8px 15px;
+  border: 1px solid #555555;
+  color: #555555;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.popup-box .popup-footer .btn:focus {
+  outline: none;
+}
+
+/*responsive*/
+
+@media (max-width: 767px) {
+  .branches .branch-items .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .popup-box .popup-content {
+    width: calc(100% - 30px);
+  }
+}
+/* ********Read More Card End******* */
+
+/* Back To Top Button */
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+  z-index: 1;
+}
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* *********Back To Top Button End********** */
+
+#space .text-box {
+  background-image: url(res/images/cosmology.jpg);
+}
+
+#stars-plantes-asteriods-comets .text-box {
+  background-image: url(res/images/stars.jpg);
+  margin-top: 20px;
+}
+
+#galaxies-quasars .text-box {
+  background-image: url(res/images/galaxies.jpg);
+  margin-top: 20px;
+}
+
+#black-holes .text-box {
+  background-image: url(res/images/black-hole.jpg);
+  margin-top: 20px;
+}
+
+/* Origin-of-Universe */
+
+.origin-of-universe {
+  background-image: url(res/images/bg-2.jpg);
+  margin-top: 20px;
+}
+
+/* ---------------------------- */
+
+/* Interesting Facts */
+
+.did-you-knowBox .video-container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+
+.did-you-knowBox .video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.did-you-knowBox .video-container h1 {
+  margin-top: 40px;
+  font-size: 4rem;
+}
+
+.did-you-knowBox .video-container .caption {
+  z-index: 101;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  padding: 1% 2% 1% 2%;
+  opacity: 1;
+}
+/* ****************** */
